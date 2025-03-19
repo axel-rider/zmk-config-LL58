@@ -43,18 +43,8 @@
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F11    &kp F12  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &tog 4
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F11    &kp F12  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &tog 3
                         &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans
-            >;
-        };
-
-        QUICKSHORTCUTS {
-            bindings = <
-&kp LA(F4)    &trans  &trans         &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans               &kp LC(LA(DEL))
-&kp CAPSLOCK  &trans  &trans         &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &kp LG(PRINTSCREEN)  &trans
-&trans        &trans  &kp LA(LC(S))  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans               &trans
-&trans        &trans  &trans         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans               &trans
-                                     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -64,7 +54,7 @@
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                           &kp PG_UP      &kp C_AC_HOME  &kp UP_ARROW  &kp END          &kp C_VOLUME_UP    &kp ENTER
 &kp LSHFT  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp PAGE_DOWN  &kp LEFT       &kp DOWN      &kp RIGHT        &kp C_VOLUME_DOWN  &kp RSHFT
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp ENTER    &kp LC(T)  &kp LC(F4)     &kp TAB        &kp LG(S)     &kp PRINTSCREEN  &kp LGUI           &tog 0
-                           &kp LALT  &kp LGUI  &mo 5   &kp SPACE    &kp SPACE  &mo 5          &kp RALT       &kp RCTRL
+                           &kp LALT  &kp LGUI  &mo 4   &kp SPACE    &kp SPACE  &mo 4          &kp RALT       &kp RCTRL
             >;
         };
 
@@ -74,22 +64,10 @@
 &kp TAB    &kp Y   &kp U   &kp I      &kp O     &kp P                             &kp PG_UP      &kp C_AC_HOME  &kp UP_ARROW  &kp END          &kp C_VOLUME_UP    &kp ENTER
 &kp LSHFT  &kp H   &kp J   &kp L      &kp SEMI  &kp SQT                           &kp PAGE_DOWN  &kp LEFT       &kp DOWN      &kp RIGHT        &kp C_VOLUME_DOWN  &kp RSHFT
 &kp LCTRL  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RET      &kp LC(T)  &kp LC(F4)     &kp TAB        &kp LG(S)     &kp PRINTSCREEN  &kp LGUI           &tog 0
-                           &kp LALT   &kp LGUI  &mo 4     &kp SPACE    &kp SPACE  &mo 4          &kp RALT       &kp RCTRL
+                           &kp LALT   &kp LGUI  &mo 3     &kp SPACE    &kp SPACE  &mo 3          &kp RALT       &kp RCTRL
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Layer3condition {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-
-        QUICKNUMBERS {
-            if-layers = <4 5>;
-            then-layer = <2>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
