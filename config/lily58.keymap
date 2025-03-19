@@ -21,50 +21,70 @@
 
             bindings = <
 &kp ESC         &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7         &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                           &kp Y   &kp U          &kp I      &kp O    &kp P     &kp KP_ENTER
+&kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                           &kp Y   &kp U          &kp I      &kp O    &kp P     &kp ENTER
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp H   &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C     &kp V     &kp B   &kp MINUS    &kp EQUAL  &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                 &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp SPACE  &mo 2   &kp RIGHT_ALT  &kp RCTRL
             >;
         };
 
-        QUICKNAVIGATION {
+        QUICK_NAV {
             bindings = <
-&kp LA(F4)  &trans          &trans        &trans     &trans         &trans                                  &trans  &trans  &trans  &kp LBKT  &kp RBKT       &kp DELETE
-&trans      &kp HOME        &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp C_VOLUME_UP                         &trans  &trans  &trans  &trans    &trans         &trans
-&kp CAPS    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp C_VOLUME_DOWN                       &trans  &trans  &trans  &trans    &trans         &trans
-&trans      &trans          &trans        &trans     &trans         &kp K_MUTE         &kp GRAVE    &trans  &trans  &trans  &trans  &trans    &kp BACKSLASH  &trans
-                                          &trans     &trans         &trans             &trans       &trans  &trans  &trans  &trans
+&kp ESC   &kp F1          &kp F2        &kp F3     &kp F4         &kp F5                               &kp F8     &kp F9  &kp F10  &kp F11   &kp F12   &kp DELETE
+&trans    &kp HOME        &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp C_VOLUME_UP                      &kp GRAVE  &trans  &trans   &kp LBKT  &kp RBKT  &kp BSLH
+&kp CAPS  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp C_VOLUME_DOWN                    &trans     &trans  &trans   &trans    &trans    &trans
+&trans    &trans          &trans        &trans     &trans         &kp K_MUTE         &kp F6    &kp F7  &trans     &trans  &trans   &trans    &trans    &trans
+                                        &trans     &trans         &trans             &trans    &trans  &trans     &trans  &trans
             >;
         };
 
-        FUNCTIONUMPAD {
+        QUICK_PAD {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F11    &kp F12  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &to 3
-                        &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                                   &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&trans     &trans           &trans       &trans    &trans      &kp LEFT_BRACE                                &kp RIGHT_BRACE    &kp N7         &kp N8        &kp N9                &trans                 &trans
+&trans     &trans           &trans       &trans    &trans      &kp LEFT_BRACKET                              &kp RIGHT_BRACKET  &kp N4         &kp N5        &kp N6                &trans                 &to 5
+&trans     &trans           &trans       &trans    &trans      &kp BACKSLASH     &kp UNDERSCORE    &kp PLUS  &kp N0             &kp N1         &kp N2        &kp N3                &trans                 &to 3
+                                         &trans    &trans      &trans            &trans            &trans    &trans             &trans         &trans
             >;
         };
 
-        NavigationMODE {
+        NUMPAD_MODE {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp ESCAPE     &kp F5         &kp F6        &kp F10          &kp F11            &kp BSPC
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                           &kp PG_UP      &kp C_AC_HOME  &kp UP_ARROW  &kp END          &kp C_VOLUME_UP    &kp ENTER
-&kp LSHFT  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp PAGE_DOWN  &kp LEFT       &kp DOWN      &kp RIGHT        &kp C_VOLUME_DOWN  &kp RSHFT
-&kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp ENTER    &kp LC(T)  &kp LC(F4)     &kp TAB        &kp LG(S)     &kp PRINTSCREEN  &kp LGUI           &to 0
-                           &kp LALT  &kp LGUI  &mo 4   &kp SPACE    &kp SPACE  &mo 4          &kp RALT       &kp RCTRL
+&kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp BACKSPACE    &trans  &trans
+&kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &trans  &trans
+&kp CAPS   &kp A   &kp S   &kp D      &kp F     &kp G                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &to 5
+&kp LSHFT  &kp Z   &kp X   &kp C      &kp V     &kp B   &kp H        &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &trans  &to 0
+                           &kp LCTRL  &kp LALT  &mo 4   &kp SPACE    &trans           &kp KP_NUMBER_0  &kp PERIOD       &kp KP_ENTER
             >;
         };
 
-        NAVIGATIONMODEALT {
+        NUMPAD_MODE_ALT {
             bindings = <
-&kp ESC    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                            &kp ESCAPE     &kp F5         &kp F6        &kp F10          &kp F11            &kp DEL
-&kp TAB    &kp Y   &kp U   &kp I      &kp O     &kp P                             &kp PG_UP      &kp C_AC_HOME  &kp UP_ARROW  &kp END          &kp C_VOLUME_UP    &kp ENTER
-&kp LSHFT  &kp H   &kp J   &kp L      &kp SEMI  &kp SQT                           &kp PAGE_DOWN  &kp LEFT       &kp DOWN      &kp RIGHT        &kp C_VOLUME_DOWN  &kp RSHFT
-&kp LCTRL  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RET      &kp LC(T)  &kp LC(F4)     &kp TAB        &kp LG(S)     &kp PRINTSCREEN  &kp LGUI           &to 0
-                           &kp LALT   &kp LGUI  &mo 3     &kp SPACE    &kp SPACE  &mo 3          &kp RALT       &kp RCTRL
+&kp ESC    &kp F1  &kp F2  &kp F3     &kp F4    &kp F5                                &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp BACKSPACE    &trans  &trans
+&kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &trans  &trans
+&kp CAPS   &kp A   &kp S   &kp D      &kp F     &kp G                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &to 5
+&kp LSHFT  &kp Z   &kp X   &kp C      &kp V     &kp B   &kp H        &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &trans  &to 0
+                           &kp LCTRL  &kp LALT  &trans  &kp SPACE    &trans           &kp KP_NUMBER_0  &kp PERIOD       &kp KP_ENTER
+            >;
+        };
+
+        NAV_MODE {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp ESCAPE     &kp F5    &kp F6        &kp F10          &kp F11            &kp BSPC
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                           &kp PG_UP      &kp HOME  &kp UP_ARROW  &kp END          &kp C_VOLUME_UP    &kp ENTER
+&kp LSHFT  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT        &kp C_VOLUME_DOWN  &kp RSHFT
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp ENTER    &kp LC(T)  &kp LC(F4)     &kp TAB   &kp LG(S)     &kp PRINTSCREEN  &kp LGUI           &to 0
+                           &kp LALT  &kp LGUI  &mo 6   &kp SPACE    &kp SPACE  &mo 6          &kp RALT  &kp RCTRL
+            >;
+        };
+
+        NAV_MODE_ALT {
+            bindings = <
+&kp ESC    &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                            &kp ESCAPE     &kp F5    &kp F6        &kp F10          &kp F11            &kp DEL
+&kp TAB    &kp Y   &kp U   &kp I      &kp O     &kp P                             &kp PG_UP      &kp HOME  &kp UP_ARROW  &kp END          &kp C_VOLUME_UP    &kp ENTER
+&kp LSHFT  &kp H   &kp J   &kp L      &kp SEMI  &kp SQT                           &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT        &kp C_VOLUME_DOWN  &kp RSHFT
+&kp LCTRL  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RET      &kp LC(T)  &kp LC(F4)     &kp TAB   &kp LG(S)     &kp PRINTSCREEN  &kp LGUI           &to 0
+                           &kp LALT   &kp LGUI  &mo 5     &kp SPACE    &kp SPACE  &mo 5          &kp RALT  &kp RCTRL
             >;
         };
     };
