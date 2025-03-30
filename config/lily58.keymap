@@ -50,21 +50,21 @@
 
         NUMPAD_MODE {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp BACKSPACE    &trans  &trans
-&kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &trans  &trans
-&kp CAPS   &kp A   &kp S   &kp D      &kp F     &kp G                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &to 5
-&kp LSHFT  &kp Z   &kp X   &kp C      &kp V     &kp B   &kp H        &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &trans  &to 0
-                           &kp LCTRL  &kp LALT  &mo 4   &kp SPACE    &trans           &kp KP_NUMBER_0  &kp PERIOD       &kp KP_ENTER
+&kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                       &trans           &kp KP_NUM       &kp KP_SLASH     &kp KP_MULTIPLY  &kp BACKSPACE     &kp DELETE
+&kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T                        &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT   &trans
+&kp CAPS   &kp A   &kp S   &kp D      &kp F     &kp G                        &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS       &to 5
+&kp LSHFT  &kp Z   &kp X   &kp C      &kp V     &kp B   &kp H        &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(KP_ENTER)  &to 0
+                           &kp LCTRL  &kp LALT  &mo 4   &kp SPACE    &trans  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
             >;
         };
 
         NUMPAD_MODE_ALT {
             bindings = <
-&kp ESC    &kp F1  &kp F2  &kp F3     &kp F4    &kp F5                                &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp BACKSPACE    &trans  &trans
-&kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &trans  &trans
-&kp CAPS   &kp A   &kp S   &kp D      &kp F     &kp G                                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &to 5
-&kp LSHFT  &kp Z   &kp X   &kp C      &kp V     &kp B   &kp H        &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &trans  &to 0
-                           &kp LCTRL  &kp LALT  &trans  &kp SPACE    &trans           &kp KP_NUMBER_0  &kp PERIOD       &kp KP_ENTER
+&kp ESCAPE  &kp F1  &kp F2  &kp F3     &kp F4    &kp F5                       &trans           &kp KP_NUM       &kp KP_SLASH     &kp KP_MULTIPLY  &kp BACKSPACE     &kp DELETE
+&kp TAB     &kp Q   &kp W   &kp E      &kp R     &kp T                        &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT   &trans
+&kp CAPS    &kp A   &kp S   &kp D      &kp F     &kp G                        &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS       &to 5
+&kp LSHFT   &kp Z   &kp X   &kp C      &kp V     &kp B   &kp H        &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RS(KP_ENTER)  &to 0
+                            &kp LCTRL  &kp LALT  &trans  &kp SPACE    &trans  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
             >;
         };
 
